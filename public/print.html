@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+    @media print {
+        /* Media Query styles for printing */
+        .border {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding: 2px;
+          text-align: center;
+          font-size: 10px;
+          font-family: tondoregular;
+      }
+  
+      .container {
+          display: flex;
+          align-items: left;
+          flex-direction: column;
+      }
+  
+      table {
+          width: 50%;
+          text-align: left;
+          margin-top: 1%;
+          align-items: left;
+          justify-content: left;
+      }
+  
+      .moneyTransferTextClass {
+          width:100%;
+          text-align: center;
+          margin-top: 2%;
+          font-size: 14px;
+      }
+      .textClass {
+          width: 100%;
+          float: left;
+          font-size: 10px;
+          color: #000;
+          font-family: tondoregular;
+          text-align: left;
+          align-items: left;
+          justify-content: left;
+      }
+     
+      .imageClass {
+          width: 50%;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+      }
+  
+      }
+      </style>
+  </head>
+  <body  style="background: #fff">
+    <div class="container">
+ <div style ="text-align:center">
+    <img class="imageClass" src =${airtel_logo} alt="airtel_logo"/> </div>
+ </br>
+ 
+   <b><p class="moneyTransferTextClass">Money Transfer Receipt</p></b>
+         <div class = "textClass">
+                   <p > Shop     Name: shopName </p>
+                   <p >Beneficiary Name: beneName</p>
+                   <p >Bank Name: bankName</p>
+                   <p >Mobile No: mobileNo</p>
+                   <p >Sender Mobile: senderMobile</p>
+                   <p >Account No: accountNo</p>
+                   <p >Date & Time: dateTime</p>
+         </div>
+ 
+    <b><h4 class="moneyTransferTextClass">Transaction Summary</h4></b>
+        <table class="table" cellpadding="0" cellspacing="0" >
+        <tr class="border">
+            <td class="border">TID/Type/UTR</td>
+            <td class="border">Amount</td>
+            <td class="border">Status</td>
+        </tr>
+        <tr class="border">
+            <td class="border">T=shirt</br> Cloth</td>
+            <td class="border">Rs. 200</td>
+            <td class="border">Paid</td>
+        </tr>
+        </table>
+    </br>
+    <div class = "textClass">
+    <p >Total Amount: Rs.200</p>
+     <p >*Service charge of 1% inclusive of GST is applicable</p>
+    <p >Contact us 24*7 </br>
+        Airtel Customers Dial 400</br>
+        Other Operator Subscriber Dial 8800688006</br>
+    </p>
+ 
+    <p >Note: This is Electronically Generated Statement and
+    does not require any Signatures. </p>
+</div>
+</div>
+</body>
+</html>
